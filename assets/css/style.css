@@ -112,6 +112,10 @@
   .justify-center {
     justify-content: center;
   }
+
+  #nav {
+    display: inline-flexbox;
+  }
   
   /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
   .card-column {
