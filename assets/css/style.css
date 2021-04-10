@@ -85,10 +85,6 @@
     text-align: center;
     display: inline-flex;
   }
-
-  .profile-pic {
-    /* Add styling to change the size of the picture */
-  }
   
   header h1.header {
     padding: 1rem 1.2rem;
@@ -102,7 +98,80 @@
   
   footer {
     margin: 1.5rem;
-    text-align: justify;
+    text-align:start;
+    display: inline-flex;
+  }
+
+  .profile-pic {
+    /* Add styling to change the size of the picture */
+  }
+
+  #nav {
+    display: inline-flexbox;
+  }
+
+  .section-image {
+    /* ADd styling for background section 2 image */
+  }
+
+  .subtitle {
+    /* float this to the lower right corner of the .section-image */
+  }
+
+  .section {
+    /* Add styling for the about me section */
+  }
+
+  .about-me-card {
+
+  }
+
+  .headers {
+
+  }
+
+  .about-me-subcard {
+
+  }
+
+  .paragraph {
+
+  }
+
+  .section-2 {
+
+  }
+
+  .work-card {
+
+  }
+
+  .box-headers {
+
+  }
+
+  #work-box-headers {
+
+  }
+
+  .contact-me-footer {
+
+  }
+
+  #cell {
+
+  }
+
+  #github {
+
+  }
+
+  #twitter {
+
+  }
+
+  #linkedin {
+
   }
   
   /* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
@@ -116,10 +185,6 @@
   
   .justify-center {
     justify-content: center;
-  }
-
-  #nav {
-    display: inline-flexbox;
   }
   
   /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
