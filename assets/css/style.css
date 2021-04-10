@@ -47,10 +47,6 @@ h6 {
   font-size: 1rem;
 }
 
-a {
-  color: var(--lavender);
-}
-
 p {
   font-size: 18px;
   color: var(--indigo);
@@ -82,9 +78,9 @@ figure {
 }
 
 .header {
-  height: 200px;
+  height: 125px;
   width: 100%;
-  padding: 20px;
+  padding: 50px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: var(--dark-slate-blue);
   color: var(--lavender);
@@ -96,24 +92,28 @@ figure {
   font-size: 48px;
 }
 
-.profile-pic {
+/* .profile-pic {
 margin: auto;
 height: 100px;
 width: 100px;
 margin-bottom: 15px;
 background-image: "assets/images/Profile Pic.png";
-}
+} */
 
 .header nav {
   background-color: var(--dark-slate-blue);
   color: var(--lavender);
   float: right;
   font-size: 20px;
-  display: inline-flex;
+  display: flex;
+}
+
+.header nav ul li a {
+  color: var(--lavender);
 }
 
 .header nav ul li {
-  display: inline-flex;
+  display: flex;
   padding: 10px;
   float: right;
   margin: 0px;
@@ -131,58 +131,53 @@ background-image: "assets/images/Profile Pic.png";
 /* } */
 
 .subtitle-img {
+  height: 200px;
+  width: 100%;
+  background-image: url("http://1-background.com/images/water-1/water-abstract-water-turquoise-repeating-image.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px;
+  margin-top: 0%;
+}
+
+.content {
+  width: 95%;
+  display: inline-flex;
+  margin-left: 20px;
+}
+
+.content-text {
+  margin-bottom: 20px;
+  padding: 10px;
+  height: 100px;
+  float: right;
+  display: inline-block;
+}
+
+.footer {
   height: 100px;
   width: 100%;
-  margin-bottom: 20px;
-  background-image: url("http://1-background.com/images/water-1/water-abstract-water-turquoise-repeating-image.jpg");
-  background-size: contain;
-  background-position: center;
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--snow);
+  color: var(--indigo);
 }
 
-#contact-footer ul {
-  display: flex;
-}
-
-#contact-footer a {
-  background-color: (--dark-slate-blue);
-  color: (var(--lavender));
-  display: inline-flex;
-}
-
-.headers {
-  display: inline-block;
-  display: inline-flex;
-  float: left;
-
-}
-
-.paragraph {
-  display: inline-flexbox;
+.footer div {
+  background-color: var(--snow);
+  color: var(--indigo);
   float: right;
-
+  font-size: 20px;
+  display: inline-flex;
 }
 
-.section-2 {
-  flex: 1 0 100%;
-  padding: 1.5rem;
-  /* when the screen resizes, make it so our columns don't jump in size */
-  transition: flex-basis 500ms linear;
-  margin-bottom: 1.5rem;
+.footer h2 {
+    display: inline-flex;
+    text-align: left;
+    font-size: 48px;
 }
 
-.section-2-div {
-  display: flex;
-}
-
-.box-headers {
-  flex: 1 0 100%;
-  padding: 1.5rem;
-  /* when the screen resizes, make it so our columns don't jump in size */
-  transition: flex-basis 500ms linear;
-  margin-bottom: 1.5rem;
-}
-
-#subtext {
-  font-size: 0.8rem;
-  
+.footer div ul li {
+  display: inline-block;
+  margin-left: 25px;
 }
