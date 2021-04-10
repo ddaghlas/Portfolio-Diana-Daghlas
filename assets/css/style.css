@@ -1,220 +1,188 @@
 /* color scheme sourced from http://khroma.co/generator/ */
 :root {
-    --snow: #fffafa;
-    --indigo: #4b0082;
-    --lavender: #e6e6fa;
-    --dark-slate-blue: #483d8b;
-  }
+  --snow: #fffafa;
+  --indigo: #4b0082;
+  --lavender: #e6e6fa;
+  --dark-slate-blue: #483d8b;
+}
 
-  html {
-    /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
-    font-size: 0.75rem;
-  }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--snow);
+}
+
+h1 {
+  /* 4rem = 40px (4 * 10px) */
+  font-size: 4rem;
+  color: var(--lavender);
+}
+
+h2 {
+  font-size: 3rem;
+  color: var(--indigo);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--lavender);
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+a {
+  color: var(--lavender);
+}
+
+p {
+  font-size: 18px;
+  color: var(--indigo);
+}
+
+/* code {
+  /* Monospace font stack is used for our code blocks to make it look more like code */
+  /* font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+    'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
+    monospace;
+}
+  */
+
+main {
+  width: 100%;
+  margin: 2rem auto;
+}
+
+footer {
+  margin: 1.5rem;
+  text-align:start;
+  display: inline-flex;
+}
+
+figure {
+  width: 200px;
+  height: 200px;
+}
+
+.header {
+  height: 200px;
+  width: 100%;
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--dark-slate-blue);
+  color: var(--lavender);
+}
+
+.header h1 {
+  display: inline-flex;
+  text-align: left;
+  font-size: 48px;
+}
+
+.profile-pic {
+margin: auto;
+height: 100px;
+width: 100px;
+margin-bottom: 15px;
+background-image: "assets/images/Profile Pic.png";
+}
+
+.header nav {
+  background-color: var(--dark-slate-blue);
+  color: var(--lavender);
+  float: right;
+  font-size: 20px;
+  display: inline-flex;
+}
+
+.header nav ul li {
+  display: inline-flex;
+  padding: 10px;
+  float: right;
+  margin: 0px;
+}
+
+/* #nav ul {
+  display: flex;
+}
+
+#nav a {
+  color: var(--lavender) */
+  /* padding:  */
+  /* margin: */
+
+/* } */
+
+.subtitle-img {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-image: url("http://1-background.com/images/water-1/water-abstract-water-turquoise-repeating-image.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+#contact-footer ul {
+  display: flex;
+}
+
+#contact-footer a {
+  background-color: (--dark-slate-blue);
+  color: (var(--lavender));
+  display: inline-flex;
+}
+
+.headers {
+  display: inline-block;
+  display: inline-flex;
+  float: left;
+
+}
+
+.paragraph {
+  display: inline-flexbox;
+  float: right;
+
+}
+
+.section-2 {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  /* when the screen resizes, make it so our columns don't jump in size */
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+}
+
+.section-2-div {
+  display: flex;
+}
+
+.box-headers {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  /* when the screen resizes, make it so our columns don't jump in size */
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+}
+
+#subtext {
+  font-size: 0.8rem;
   
-  body {
-    /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
-    /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
-    font-size: 1.75rem;
-    line-height: 1.5;
-    color: var(--dark-slate-blue);
-    background-color: var(--snow);
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-bottom: 0.625rem;
-    color: var(--dark-slate-blue);
-    font-weight: 500;
-    line-height: 1.1;
-  }
-  
-  h1 {
-    /* 4rem = 40px (4 * 10px) */
-    font-size: 4rem;
-    color: var(--lavender);
-  }
-  
-  h2 {
-    font-size: 3rem;
-  }
-  
-  h3 {
-    font-size: 2rem;
-  }
-  
-  h4 {
-    font-size: 1rem;
-  }
-  
-  h5 {
-    font-size: 1rem;
-  }
-  
-  h6 {
-    font-size: 1rem;
-  }
-  
-  p {
-    margin-bottom: 1rem;
-  }
-  
-  /* code {
-    /* Monospace font stack is used for our code blocks to make it look more like code */
-    /* font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-      'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
-      'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
-      monospace;
-  }
-   */ 
-  header {
-    width: 96%;
-    margin: 0 auto;
-    padding: 2.5rem;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  header h1.header {
-    padding: 1rem 1.2rem;
-    font-size: 4.5rem;
-  }
-  
-  main {
-    width: 96%;
-    margin: 2rem auto;
-  }
-  
-  footer {
-    margin: 1.5rem;
-    text-align:start;
-    display: inline-flex;
-  }
-
-  figure {
-    width: 200px;
-    height: 200px;
-  }
-
-  .header-nav {
-    background-color: var(--dark-slate-blue);
-    color: var(--lavender);
-    width: 100%;
-    height: 30%;
-    margin: 0 auto;
-    padding: 2.5rem;
-    text-align: center;
-    display: inline-flex;
-  }
-
-  #header-nav-text {
-    color: var(--lavender);
-  }
-
-  .profile-pic {
-    margin: 50px 50px 0 0;
-  }
-
-  #nav ul {
-    display: flex;
-  }
-
-  #nav a {
-    color: var(--lavender)
-    /* padding:  */
-    /* margin: */
-
-  }
-
-  .section-image {
-    /* ADd styling for background section 2 image */
-  }
-
-  .subtitle {
-    /* float this to the lower right corner of the .section-image */
-  }
-
-  .section {
-    
-  }
-
-  .about-me-card {
-
-  }
-
-  .headers {
-    display: inline-block;
-    display: inline-flex;
-    float: left;
-
-  }
-
-  .about-me-subcard {
-
-  }
-
-  .paragraph {
-    display: inline-flexbox;
-    float: right;
-
-  }
-
-  .section-2 {
-    flex: 1 0 100%;
-    padding: 1.5rem;
-    /* when the screen resizes, make it so our columns don't jump in size */
-    transition: flex-basis 500ms linear;
-    margin-bottom: 1.5rem;
-  }
-
-  .section-2-div {
-    display: flex;
-  }
-
-  .work-card {
-
-  }
-
-  .box-headers {
-    flex: 1 0 100%;
-    padding: 1.5rem;
-    /* when the screen resizes, make it so our columns don't jump in size */
-    transition: flex-basis 500ms linear;
-    margin-bottom: 1.5rem;
-  }
-
-  #work-box-headers {
-
-  }
-
-  #subtext {
-    font-size: 0.8rem;
-    
-  }
-
-  .contact-me-footer {
-
-  }
-
-  #cell {
-
-  }
-
-  #github {
-
-  }
-
-  #twitter {
-
-  }
-
-  #linkedin {
-
-  }
+}

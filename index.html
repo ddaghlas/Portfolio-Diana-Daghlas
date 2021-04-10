@@ -10,8 +10,9 @@
 </head>
 
 <body>
-    <header class="header-nav" id="header-nav-text">
-        <h1 class="header">Diana Daghlas</h1>
+    <header>
+        <div class="header">
+            <h1>Diana Daghlas</h1>
         <div class="profile-pic">
             <img src="assets/images/Profile Pic.png" alt="profile picture"/>
         </div>
@@ -23,33 +24,32 @@
                 <li><a href="#resume">Resume</a></li>
             </ul>
         </nav>
+     </div>
     </header>
 
     <main>
-        <section class="section-image">
-            <!-- insert image header for section 2 here -->
-            <h2 class="subtitle">Full Stack Web Development</h2>
-        </section>
-        <section class="section" id="about-me"> 
-            <article class="about-me-card">
-                <h2 class="headers">About Me</h2>
-                <div class="about-me-subcard">
-                    <p class="paragraph">
+        <div class="subtitle-img"></div>
+            <!-- need to add subtitle inside -->
+            <p class="subtitle">Full Stack Web Development</p>
+        <div class="content"> 
+            <section id="about-me" class="content-text">
+                <h2>About Me</h2>
+                    <p>
                         I am a mission-oriented full-stack development student with a passion to learn how to create thoughtful UI design and collaboration. I've always sought out opportunities that challenge me, allowing me to help solve problems. My career path has taken me many places - the food and beverage industry was my home for sometime, working as a Level 2 Sommelier - however, web development continued to draw my attention. 
                     </p>
-                    <p class="paragraph">
+                    <p>
                         As a student of web development, I aim to achieve the highest level of accuracy and efficiency. I have an obssessive attention to detail and pride myself on not only finishing projects, but making sure they meet top standards. For this reason, I am excited to go above and beyond at a high growth comapny. 
                     </p>
+                </section>
                 </div>
-            </article>
-        </section>
+       
 
-        <section class="section-2">
+        <section class="section-2" id="work">
             <h2 class="headers">Work</h2>
             <div class="section-2-div">
             <article class="work-card">
                     <h3 id="work-box-headers">Code Refactoring</h3>
-                    <p id="subtext">HTML & CSS</p>
+                    <h4 id="subtext">HTML & CSS</h4>
                     <figure>
                     <img src="assets/images/Code Refactor Image.png" alt="code refactor image"/>
                     <figcaption><a href="http://127.0.0.1:5500/Homework/Code-Refactor/index.html">Code Refactoring Project</figcaption>
@@ -58,7 +58,7 @@
                 
                 <article class="work-card"> 
                     <h3 id="work-box-headers">Led Zeppelin Fanpage</h3>
-                    <p id="subtext">HTML & CSS</p>
+                    <h4 id="subtext">HTML & CSS</h4>
                     <figure>
                     <img src="assets/images/Led Zeppelen Fanpage.png" alt="Led Zeppelin fanpage"/>
                     <figcaption><a href="file:///Users/dianadaghlas/Desktop/PREWORK_DD/Module-4/fanpage.html">Led Zeppelin Fanpage Project</figcaption>
@@ -71,13 +71,13 @@
 
     <!-- Add contact info along with links to all professional social media -->
     <footer>
-        <section class="contact-me-footer">
-            <h2 class="headers">Contact Me</h2>
+        <section class="contact-me-footer" id="contact-me">
+            <h2 id="contact-footer">Contact Me</h2>
             <ul>
-                <li id="cell">(313)-673-9464</li>
-                <li id="github"><a href="https://github.com/ddaghlas">GitHub</a></li>
-                <li id="twitter"><a href="https://twitter.com/@diana_daghlas">Twitter</a></li>
-                <li id="linkedin"><a href="https://www.linkedin.com/in/diana-daghlas-3b755a20b">LinkedIn</a></li>
+                <li><a href="#cell">(313)-673-9464</a></li>
+                <li><a href="https://github.com/ddaghlas">GitHub</a></li>
+                <li><a href="https://twitter.com/@diana_daghlas">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/diana-daghlas-3b755a20b">LinkedIn</a></li>
             </ul>
         </section>
     </footer>
