@@ -2,8 +2,9 @@
 :root {
     --snow: #fffafa;
     --indigo: #4b0082;
-    --aqua: #40e0d0;
-    --navy: #000080;
+    --lavender: #e6e6fa;
+    --dark-slate-blue: #483d8b
+    ;
   }
   
   /* set content highlight color and background */
@@ -25,7 +26,7 @@
     /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
     font-size: 1.75rem;
     line-height: 1.5;
-    color: var(--navy);
+    color: var(--dark-slate-blue);
     background-color: var(--snow);
   }
   
@@ -36,7 +37,7 @@
   h5,
   h6 {
     margin-bottom: 0.625rem;
-    color: var(--navy);
+    color: var(--dark-slate-blue);
     font-weight: 500;
     line-height: 1.1;
   }
@@ -44,7 +45,7 @@
   h1 {
     /* 4rem = 40px (4 * 10px) */
     font-size: 4rem;
-    color: var(--aqua);
+    color: var(--lavender);
   }
   
   h2 {
@@ -104,8 +105,8 @@
   }
 
   .header-nav {
-    background-color: var(--navy);
-    color: var(--aqua);
+    background-color: var(--dark-slate-blue);
+    color: var(--lavender);
     width: 100%;
     height: 30%;
     margin: 0 auto;
@@ -115,7 +116,7 @@
   }
 
   #header-nav-text {
-    color: var(--aqua);
+    color: var(--lavender);
   }
 
   .profile-pic {
@@ -135,7 +136,7 @@
   }
 
   .section {
-    /* Add styling for the about me section */
+    
   }
 
   .about-me-card {
@@ -143,6 +144,9 @@
   }
 
   .headers {
+    display: inline-block;
+    display: inline-flex;
+    float: left;
 
   }
 
@@ -151,11 +155,17 @@
   }
 
   .paragraph {
+    display: inline-flexbox;
+    float: right;
 
   }
 
   .section-2 {
-
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
   }
 
   .work-card {
@@ -172,6 +182,11 @@
 
   #work-box-headers {
 
+  }
+
+  #subtext {
+    font-size: 0.8rem;
+    
   }
 
   .contact-me-footer {
@@ -223,10 +238,10 @@
     justify-content: flex-start;
     min-height: 100%;
     padding: 2rem;
-    color: var(--navy);
+    color: var(--dark-slate-blue);
   
     /* outline is like border, but on the outside of the box instead of inside */
-    outline: 2px dashed var(--aqua);
+    outline: 2px dashed var(--lavender);
     outline-offset: -2px;
     transition: all 0.5s ease-in-out;
   }
@@ -237,8 +252,8 @@
     margin: -4rem 0 1.5rem 0;
     padding: 0.5rem 1rem;
     background-color: var(--snow);
-    color: var(--navy);
-    border: 2px solid var(--aqua);
+    color: var(--dark-slate-blue);
+    border: 2px solid var(--lavender);
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
   }
@@ -246,7 +261,7 @@
   /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
   .code-card:hover,
   .code-card:hover .card-header {
-    box-shadow: inset 0px 0px 8px var(--navy), 0 0 15px var(--navy);
+    box-shadow: inset 0px 0px 8px var(--dark-slate-blue), 0 0 15px var(--dark-slate-blue);
   }
   
   /* each card's code block grows to the height of the largest code block on the page, making each card even in height */
@@ -260,7 +275,7 @@
     overflow: auto;
     tab-size: 4;
     padding: 1.2rem 1rem;
-    color: var(--aqua);
+    color: var(--lavender);
     border-radius: 8px;
     /* use linear-gradient() function to create a fading background  */
     background-image: linear-gradient(
