@@ -33,18 +33,17 @@ h2 {
 h3 {
   font-size: 2rem;
   color: var(--lavender);
+  margin-bottom: 10px;
+  text-align: right;
+  margin-right: 20px;
 }
 
 h4 {
   font-size: 1rem;
-}
-
-h5 {
-  font-size: 1rem;
-}
-
-h6 {
-  font-size: 1rem;
+  color: var(--lavender);
+  margin-bottom: 1px;
+  text-align: right;
+  margin-right: 20px;
 }
 
 p {
@@ -66,16 +65,15 @@ main {
   margin: 2rem auto;
 }
 
-footer {
-  margin: 1.5rem;
-  text-align:start;
-  display: inline-flex;
-}
-
 figure {
   width: 400px;
   height: 400px;
-  float: right;
+}
+
+footer {
+  width: 100%;
+  margin: 2rem auto;
+  display: inline-flex;
 }
 
 .header {
@@ -146,7 +144,7 @@ background-image: "assets/images/Profile Pic.png";
 
 .float-right {
   float: right;
-  margin-right: 10px;
+  margin-right: 50px;
 }
 
 .content-text {
@@ -156,21 +154,28 @@ background-image: "assets/images/Profile Pic.png";
   display: inline-block;
 }
 
-.work-content {
+/* .work-content {
   width: 75%;
   display: inline-block;
   margin-left: 20px;
-}
+} */
 
 
 
 .footer {
-  height: 100px;
+  height: 125px;
   width: 100%;
-  padding: 20px;
+  padding: 50px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: var(--snow);
   color: var(--indigo);
+}
+
+.footer h2 {
+  display: inline-flex;
+  text-align: left;
+  font-size: 48px;
+  text-decoration: none;
 }
 
 .footer div {
@@ -178,16 +183,16 @@ background-image: "assets/images/Profile Pic.png";
   color: var(--indigo);
   float: right;
   font-size: 20px;
-  display: inline-flex;
+  display: flex;
 }
 
-.footer h2 {
-    display: inline-flex;
-    text-align: left;
-    font-size: 48px;
+.footer div ul li a {
+  color: var(--indigo);
 }
 
 .footer div ul li {
   display: inline-block;
-  margin-left: 25px;
+  padding: 10px;
+  float: right;
+  margin: 0px;
 }
