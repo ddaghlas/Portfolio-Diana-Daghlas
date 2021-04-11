@@ -75,8 +75,12 @@ main {
 aside {
   flex: 30%;
   background-color: var(--snow);
-  padding: 20px;
+  padding: 80px;
   flex-wrap: wrap;
+}
+
+aside div h2 {
+  flex-direction: column;
 }
 
 section {
@@ -164,7 +168,7 @@ background-image: "assets/images/Profile Pic.png";
 }
 
 .subtitle-img {
-  height: 200px;
+  height: 150px;
   width: 100%;
   background-image: url("http://1-background.com/images/water-1/water-abstract-water-turquoise-repeating-image.jpg");
   background-size: cover;
@@ -189,6 +193,7 @@ background-image: "assets/images/Profile Pic.png";
   width: 40%;
   text-align: left;
   margin-left: 50px;
+  flex-wrap: wrap;
 }
 
 .float-left {
@@ -203,12 +208,20 @@ background-image: "assets/images/Profile Pic.png";
   display: inline-block;
 }
 
+.photo {
+  padding: 20px 10px;
+  border: 2px solid var(--dark-slate-blue);
+}
+
 .work-images {
-  flex: 1 0 0;
+  flex: 30%;
   padding: 10px;
   text-align: center;
   border-style: solid;
+  border-radius: 10px;
   border-width: 1px;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .work-images header {
@@ -220,36 +233,18 @@ background-image: "assets/images/Profile Pic.png";
   display: inline-block;
 }
 
-/* .work-images header p {
-  padding: 10px;
-  background: var(--dark-slate-blue);
-  color: var(--lavender);
-  text-align: center;
-  width: fit-content;
-  display: inline-block;
-} */
-
 .work-images img {
   width: 50%;
   height: 50%;
 }
 
-/* .work-content {
-  margin-right: 20px;
-  padding: 20px;
-  clear: both;
-  align-items: center;
-  width: 20%;
-  height: 100%;
-}
-
-.work-images {
+/* .work-images {
   height: 400px;
   width: 400px;
   padding-top: 20px;
   margin-top: 0%;
   align-items: center;
-} */
+} */ 
 
 /* .work-content {
   width: 75%;
@@ -292,4 +287,15 @@ background-image: "assets/images/Profile Pic.png";
   padding: 10px;
   float: right;
   margin: 0px;
+}
+
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+  aside {
+    order: 2;
+  }
 }
