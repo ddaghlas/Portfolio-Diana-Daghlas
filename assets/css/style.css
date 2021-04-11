@@ -14,7 +14,13 @@
 
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
   background-color: var(--snow);
+}
+
+header {
+  text-align: justify;
+  color: var(--lavender);
 }
 
 h1 {
@@ -34,7 +40,7 @@ h3 {
   font-size: 2rem;
   color: var(--lavender);
   margin-bottom: 10px;
-  text-align: right;
+  text-align: center;
   margin-right: 20px;
 }
 
@@ -42,7 +48,7 @@ h4 {
   font-size: 1rem;
   color: var(--lavender);
   margin-bottom: 1px;
-  text-align: right;
+  text-align: center;
   margin-right: 20px;
 }
 
@@ -61,8 +67,40 @@ p {
   */
 
 main {
-  width: 100%;
-  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+
+aside {
+  flex: 30%;
+  background-color: var(--snow);
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+section {
+  flex: 3;
+  background-color: var(--snow);
+  padding: 20px;
+}
+
+section header {
+  padding: 10px;
+  background: var(--dark-slate-blue);
+  color: var(--lavender);
+  text-align: center;
+  width: fit-content;
+  display: inline-block;
+}
+
+section header p {
+  padding: 5px;
+  background: var(--dark-slate-blue);
+  color: var(--lavender);
+  text-align: center;
+  width: fit-content;
+  display: inline-block;
 }
 
 figure {
@@ -71,9 +109,16 @@ figure {
 }
 
 footer {
-  width: 100%;
-  margin: 2rem auto;
-  display: inline-flex;
+  padding: 20px;
+  text-align: justify;
+  background: var(--snow);
+  color: var(--indigo);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
 }
 
 .header {
@@ -128,11 +173,15 @@ background-image: "assets/images/Profile Pic.png";
   margin-top: 0%;
 }
 
-.content-about-me {
+/* .subtitle-img div p {
+  text-align: right;
+} */
+
+/* .content-about-me {
   width: 95%;
   display: inline-flex;
   margin-left: 20px;
-}
+} */
 
 .P-headers {
   float: left;
@@ -142,9 +191,9 @@ background-image: "assets/images/Profile Pic.png";
   margin-left: 50px;
 }
 
-.float-right {
-  float: right;
-  margin-right: 50px;
+.float-left {
+  float: left;
+  margin-left: 25px;
 }
 
 .content-text {
@@ -153,6 +202,54 @@ background-image: "assets/images/Profile Pic.png";
   height: 100px;
   display: inline-block;
 }
+
+.work-images {
+  flex: 1 0 0;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.work-images header {
+  padding: 10px;
+  background: var(--dark-slate-blue);
+  color: var(--lavender);
+  text-align: center;
+  width: fit-content;
+  display: inline-block;
+}
+
+/* .work-images header p {
+  padding: 10px;
+  background: var(--dark-slate-blue);
+  color: var(--lavender);
+  text-align: center;
+  width: fit-content;
+  display: inline-block;
+} */
+
+.work-images img {
+  width: 50%;
+  height: 50%;
+}
+
+/* .work-content {
+  margin-right: 20px;
+  padding: 20px;
+  clear: both;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+}
+
+.work-images {
+  height: 400px;
+  width: 400px;
+  padding-top: 20px;
+  margin-top: 0%;
+  align-items: center;
+} */
 
 /* .work-content {
   width: 75%;
