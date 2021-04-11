@@ -73,8 +73,9 @@ footer {
 }
 
 figure {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
+  float: right;
 }
 
 .header {
@@ -119,17 +120,6 @@ background-image: "assets/images/Profile Pic.png";
   margin: 0px;
 }
 
-/* #nav ul {
-  display: flex;
-}
-
-#nav a {
-  color: var(--lavender) */
-  /* padding:  */
-  /* margin: */
-
-/* } */
-
 .subtitle-img {
   height: 200px;
   width: 100%;
@@ -140,19 +130,39 @@ background-image: "assets/images/Profile Pic.png";
   margin-top: 0%;
 }
 
-.content {
+.content-about-me {
   width: 95%;
   display: inline-flex;
   margin-left: 20px;
+}
+
+.P-headers {
+  float: left;
+  font-size: 36px;
+  width: 40%;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.float-right {
+  float: right;
+  margin-right: 10px;
 }
 
 .content-text {
   margin-bottom: 20px;
   padding: 10px;
   height: 100px;
-  float: right;
   display: inline-block;
 }
+
+.work-content {
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+
 
 .footer {
   height: 100px;
