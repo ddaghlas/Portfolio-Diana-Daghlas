@@ -42,6 +42,7 @@ footer {
 .projectList {
 	margin-top: 180px;
 	text-align: center;
+	display: inline-flexbox;
 }
 
 .projectList h2 {
