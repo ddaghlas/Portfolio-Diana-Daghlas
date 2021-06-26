@@ -27,7 +27,7 @@ ul {
 }
 footer {
 	text-align: center;
-	margin-top: 80px;
+	margin-top: 40px;
 }
 #profilepic {
 	width: 300px;
@@ -50,12 +50,12 @@ footer {
 }
 
 .projectList {
-	margin-top: 180px;
+	margin-top: 100px;
 	text-align: center;
 	display: inline-flexbox;
 }
 
-.projectList h2 {
+.projectList h4 {
 	font-weight: bolder;
 	font-size: xx-large;
 	margin-top: 40px;
@@ -74,6 +74,15 @@ footer {
 	border-radius: 5px;
 	padding: 8px;
 }
+
+.card-body a {
+	text-align: center;
+}
+
+.card-body .btn-primary {
+	text-align: center;
+}
+
 .contactInformation {
 	font-size: large;
 	margin-top: 80px;
