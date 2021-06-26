@@ -5,18 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://kit.fontawesome.com/71e6af3b3b.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/71e6af3b3b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Diana Daghlas Full-Stack Web Developer Portfolio</title>
 </head>
 <body>
   <header>
-<div class="hero pt-5 mb-5">
-    <h1 class="display-4 text-center"><strong></strong>Diana Daghlas - Full-Stack Web Developer</strong></h1>
+    <div class="hero pt-5 mb-5">
+    <h1 class="display-4 text-center"><strong>Diana Daghlas - Full-Stack Web Developer</strong></h1>
   <div>
   </div>
 </div>
@@ -34,71 +34,55 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
   <li class="nav-item main-link">
     <a class="nav-link" href="#contact">Contact</a>
   </li>
-</ul>
-      <img id="profilepic" src="assets/img/PProfile-Pic.png" alt="Profile Picture">
-    </header>
+  </ul>
+    <img id="profilepic" src="assets/img/PProfile-Pic.png" alt="Profile Picture">
+  </header>
 
-<div class="container projectList">
+<div class="projectList">
   <h2 id="projects">Deployed Applications</h2>
-  <div class="d-flex d-sm-flex flex-column flex-md-row mb-5">
-<div class="card col mb-3" >
-  <!-- <div class="text-center">
-    <img src="assets/img/Weather-Dash.gif" class="rounded" alt="screenshot of weather app">
-  </div> -->
-  <img class="card-img-top" src="assets/img/Weather-Dash.gif" alt="screenshot of weather app">
+  <!-- <div class="d-flex d-sm-flex flex-column flex-md-row mb-5"> -->
+<div class="card w-25 col mb-3" >
   <div class="card-body">
-     <a href="https://ddaghlas.github.io/Weather-Dashboard/" target="_blank"><strong>Weather-Dashboard</strong></a>
-     <br>
-     <p>This is a weather dashboard that I have built to allow users to search for a city, which then displays the date and time, current temperature, humidity, wind speed and UV index; also includes a 5 day forecast for the user generated location. I utilized the OpenWeather One Call API to retrieve the weather data for each of the cities.</p>
-     <br>
-</div>
+  <h4 class="card-title float-start"><strong>Weather-Dashboard</strong></h4>
+  <img src="assets/img/Weather-Dash.gif" class="rounded float-start" alt="screenshot of weather app">
+    <p class="card-text-end">This is a weather dashboard that I have built to allow users to search for a city, which then displays the date and time, current temperature, humidity, wind speed and UV index; also includes a 5 day forecast for the user generated location. I utilized the OpenWeather One Call API to retrieve the weather data for each of the cities.</p>
+    <a href="https://ddaghlas.github.io/Weather-Dashboard/" class="btn btn-primary">Weather Dashboard</a>
     </div>
-<div class="card col mb-3" >
-  <!-- <div class="text-center">
-    <img src="assets/img/PW-Generator.gif.gif" class="rounded" alt="screenshot of password generator">
-  </div> -->
-  <img class="card-img-top" src="assets/img/PW-Generator.gif" alt="screenshot of password generator">
+    </div>
+<!-- <div class="d-flex d-sm-flex flex-column flex-md-row mb-5"> -->
+<div class="card w-25 col mb-3" >
   <div class="card-body">
-    <a href="https://ddaghlas.github.io/Password-Generator/" target="_blank"><strong>Secure Password Generator</strong></a>
-    <br>
-    <p>A password generator that I constructed, that enables employees to generate random passwords based on criteria that they've selected. The data the employee has access to is sensitive, so the password must be strong and provide greater security. The app is run in the browser that features dynamically updated HTML and CSS powered by the JavaScript code I've written. The code is meant to be clean and polished with a responsive user interface that adapts to multiple screen sizes. The password can also include special characters.</p>
-    <br>
-  </div>
-</div>
-<div class="card col mb-3">
-  <!-- <div class="text-center">
-    <img src="assets/img/Code-Quiz.gif" class="rounded" alt="GIF of Code-Quiz">
-  </div> -->
-  <img class="card-img-top" src="assets/img/Code-Quiz.gif" alt="screenshot of code quiz">
-  <div class="card-body">
-    <a href="https://ddaghlas.github.io/Code-Quiz/" target="_blank"><strong>Coding Assessment Quiz</strong></a>
-    <br>
-    <p>This is a multiple-choice coding quiz that I built to model a coding assessment. It's meant to familiarize myself with this type of assessment should I encounter it in the future. In preperation for future full-stack web development interview processes, this coding quiz includes HTML, CSS, JS and Web-APIs to allow full functionality.</p>
-    <br>
-  </div>
-</div>
-<div class="card col mb-3">
-  <img class="card-img-top" src="assets/img/ExpressGIF.gif" alt="screenshot of Note Taker">
-  <div class="card-body">
-    <a href="https://vast-castle-82314.herokuapp.com/" target="_blank"><strong>Note Taking Application</strong></a>
-    <br>
-    <p>As a developer, my task was to modify starter code to create an application called Note Taker that can be used to write and save notes. This application uses an Express.js back-end and will save and retrieve note data from a JSON file. The application’s front-end had already been created. My job was to build the back end, connect the two, and then deploy the entire application to Heroku.</p>
-    <br>
-  </div>
-</div>
-<div class="card col mb-3">
-  <img class="card-img-top" src="assets/img/Covid.gif" alt="screenshot of covid project">
-  <div class="card-body">
-    <a href="https://mxdragon.github.io/Covid19Risk-VaccineAssessment/" target="_blank"><strong>Group Covid19 Vaccine/Risk Assessment Project</strong></a>
-    <br>
-    <p>This is a Covid-19 Risk and Vaccine Assessment application (done as a group collaboration) that retrieves real-time Covid-19 cases and Covid-19 vaccine data based on the users geo-location. There is also formatting for manual entry of location if the user wishes to disable geo-location. In preparation for future full-stack web development group projects, this application includes HTML, CSS, JS and Web-APIs to allow full functionality.</p>
-    <br>
-  </div>
-</div>
-
-  </div>
-  </div>
-  </div>
+  <h4 class="card-title float-start"><strong>Secure Password Generator</strong></h4>
+  <img src="assets/img/PW-Generator.gif" class="rounded float-start" alt="screenshot of password generator">
+    <p class="card-text-end">A password generator that I constructed, that enables employees to generate random passwords based on criteria that they've selected. The data the employee has access to is sensitive, so the password must be strong and provide greater security. The app is run in the browser that features dynamically updated HTML and CSS powered by the JavaScript code I've written. The code is meant to be clean and polished with a responsive user interface that adapts to multiple screen sizes. The password can also include special characters.</p>
+    <a href="https://ddaghlas.github.io/Password-Generator/" class="btn btn-primary">Secure Password Generator</a>
+    </div>
+    </div>
+  <div class="card w-25 col mb-3" >
+    <div class="card-body">
+    <h4 class="card-title float-start"><strong>Coding Assessment Quiz</strong></h4>
+    <img src="assets/img/Code-Quiz.gif" class="rounded float-start" alt="screenshot of code quiz">
+      <p class="card-text-end">This is a multiple-choice coding quiz that I built to model a coding assessment. It's meant to familiarize myself with this type of assessment should I encounter it in the future. In preperation for future full-stack web development interview processes, this coding quiz includes HTML, CSS, JS and Web-APIs to allow full functionality.</p>
+      <a href="https://ddaghlas.github.io/Code-Quiz/" class="btn btn-primary">Coding Assessment Quiz</a>
+      </div>
+      </div>
+    <div class="card w-25 col mb-3" >
+      <div class="card-body">
+      <h4 class="card-title float-start"><strong>Note Taking Application</strong></h4>
+      <img src="assets/img/ExpressGIF.gif" class="rounded float-start" alt="screenshot of Note Taker">
+        <p class="card-text-end">This is a multiple-choice coding quiz that I built to model a coding assessment. It's meant to familiarize myself with this type of assessment should I encounter it in the future. In preperation for future full-stack web development interview processes, this coding quiz includes HTML, CSS, JS and Web-APIs to allow full functionality.</p>
+        <a href="https://vast-castle-82314.herokuapp.com/" class="btn btn-primary">Note Taking Application</a>
+        </div>
+        </div>
+    <div class="card w-25 col mb-3" >
+      <div class="card-body">
+      <h4 class="card-title float-start"><strong>Group Covid19 Vaccine/Risk Assessment Project</strong></h4>
+      <img src="assets/img/Covid.gif" class="rounded float-start" alt="screenshot of covid project">
+        <p class="card-text-end">This is a Covid-19 Risk and Vaccine Assessment application (done as a group collaboration) that retrieves real-time Covid-19 cases and Covid-19 vaccine data based on the users geo-location. There is also formatting for manual entry of location if the user wishes to disable geo-location. In preparation for future full-stack web development group projects, this application includes HTML, CSS, JS and Web-APIs to allow full functionality.</p>
+        <a href="https://mxdragon.github.io/Covid19Risk-VaccineAssessment/" class="btn btn-primary">COVID-19 Application</a>
+        </div>
+      </div>
+    </div>
 
   <div class="contactInformation">
     <h2 id="contact">Contact Information</h2>

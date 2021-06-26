@@ -10,8 +10,18 @@ h1 {
 }
 
 h2 {
+	font-size: x-large;
+	text-align:justify;
+}
+
+h4 {
 	text-align: center;
 }
+
+/* p {
+	text-align: end;
+} */
+
 ul {
 	list-style-type: none;
 }
